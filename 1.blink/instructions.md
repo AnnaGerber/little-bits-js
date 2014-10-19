@@ -14,6 +14,8 @@ Blink an LED
 
 Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
 
+![image](../images/blink.jpg)
+
 ### Code
 
     var five = require("johnny-five"), board, led;

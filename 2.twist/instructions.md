@@ -15,6 +15,8 @@ Use a dimmer to control LED bargraph
 
 Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino bit to bargraph bit. Switch the output mode for d5 on the Arduino to PWM using the onboard switch next to the connector.
 
+![image](../images/pulse_twist.jpg)
+
 ### Code
 
     var five = require("johnny-five"),

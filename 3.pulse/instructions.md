@@ -17,6 +17,8 @@ Use a dimmer to create an LED pulsing effect
 
 Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino bit to bargraph bit. Switch the output mode for d5 to PWM.
 
+![image](../images/pulse_twist.jpg)
+
 ### Code
 
     var five = require("johnny-five"), 

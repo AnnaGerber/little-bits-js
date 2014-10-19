@@ -15,6 +15,8 @@ Respond to button presses
 
 Connect power bit to button bit, button bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
 
+![image](../images/press.jpg)
+
 ### Code
 
     var five = require("johnny-five"), 
