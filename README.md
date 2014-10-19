@@ -32,7 +32,7 @@ You could substitute an alternative power module e.g. [USB power](http://littleb
 ![image](images/dimmer.jpg)
 
 * 1 x [button](http://littlebits.cc/bits/button)
-* 1 x [dimmer](http://littlebits.cc/bits/dimmer)
+* 2 x [dimmer](http://littlebits.cc/bits/dimmer)
 
 ### Outputs (green)
 
