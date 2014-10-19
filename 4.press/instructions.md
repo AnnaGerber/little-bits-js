@@ -50,8 +50,11 @@ The modulo operator (%) is used to check whether the number of button presses is
 
     if (buttonCounter % 3 === 0) {
       // led off
+      led.off();
     } else if (buttonCounter % 3 === 1) {
-      // fade to half brightness
+      // drop to half brightness
+      led.brightness(128);
     } else {
       // led on
+      led.on();
     }
