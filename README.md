@@ -24,7 +24,7 @@ This tutorial uses bits from the [Arduino Coding Kit ](http://littlebits.cc/kits
 
 * 1 x [power](http://littlebits.cc/bits/littlebits-power)
 
-You could substitute an alternative power module e.g. USB power
+You could substitute an alternative power module e.g. [USB power](http://littlebits.cc/bits/usb-power).
 
 ### Inputs (pink)
 
@@ -40,7 +40,7 @@ You could substitute an alternative power module e.g. USB power
 ![image](images/servo.jpg)
 
 * 1 x [bargraph](http://littlebits.cc/bits/bargraph)
-* 1 x [servo](hhttp://littlebits.cc/bits/servo)
+* 1 x [servo](http://littlebits.cc/bits/servo)
 
 ## Preparing your development environment
 
@@ -69,7 +69,7 @@ Johnny-Five communicates with Arduino using the Firmata protocol, so you'll need
 
 ## Running your programs
 
-You can run the JavaScript programs that you create using Node.js from the command line. For example to run the blink program from the first project, run the following from the directory where you have created your JavaScript files:
+You can run the JavaScript programs that you create using Node.js from the command line. For example to run the blink program from the first project, run the following from the directory where you have saved the blink.js JavaScript file:
 
     node blink.js
 
