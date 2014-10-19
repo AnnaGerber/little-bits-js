@@ -79,7 +79,7 @@ You can run the JavaScript programs that you create using Node.js from the comma
 You can download all of the project files as a zipfile [here](https://github.com/AnnaGerber/little-bits-js/archive/master.zip) or visit [AnnaGerber/little-bits-js](https://github.com/AnnaGerber/little-bits-js) on GitHub.
 
 1. [Blink](./1.blink/instructions.md) Blink an LED
-1. [Twist](./2.twist/instructions.md) Use a dimmer to control LED bargraph
+1. [Brightness](./2.brightness/instructions.md) Use a dimmer to control LED brightness
 1. [Pulse](./3.pulse/instructions.md) Use a dimmer to create an LED pulsing effect
 1. [Press](./4.press/instructions.md) Respond to button presses
 

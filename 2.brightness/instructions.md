@@ -1,6 +1,6 @@
-## Twist
+## Brightness
 
-Use a dimmer to control LED bargraph
+Use a dimmer to control LED brightness
 
 ### Bits you'll need
 
@@ -44,11 +44,11 @@ Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino 
 
     });
 
-You can find a copy of this code in [2.twist/twist.js](./twist.js)
+You can find a copy of this code in [2.brightness/brightness.js](./brightness.js)
 
 ### What you'll see
 
-This project uses Pulse Width Modulation (PWM) to control the LED brightness using a value read from an analog input (the dimmer). All of the LEDs will increase or decrease in brightness in response to twisting the dimmer. You'll see the raw value read from the dimmer printed to the console whenever it changes.
+This project uses Pulse Width Modulation (PWM) to control the LED brightness using a value read from an analog input (the dimmer). All of the LEDs in the bargraph will increase or decrease in brightness in response to twisting the dimmer. You'll see the raw value read from the dimmer printed to the console whenever it changes.
 
 ### Going further
 
