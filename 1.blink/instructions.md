@@ -27,7 +27,7 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
         led: led
       });
       console.log("You can interact with the bargraph via the variable 'led'");
-      console.log("e.g. led.stop();\n Hit control-D to exit.\n >> ");
+      console.log("e.g. led.stop();\n Hit control-d to exit.\n >> ");
     });
 
 You can find a copy of this code in [1.blink/blink.js](./blink.js)
@@ -38,13 +38,13 @@ All of the LEDs in the bargraph will blink on and off together, once per second 
 
 ### Going further
 
-Johnny-Five provides a REPL (Read-Eval-Print Loop) where you can type in commands to take effect immediately. From the REPL prompt (>>) try the following commands:
+Johnny-Five provides a REPL (Read-Eval-Print Loop) where you can type in commands to take effect immediately. From the REPL prompt try the following commands:
 
-    led.stop() // stop blinking or pulsing
-    led.off() // turn led off
-    led.on() // turn led on
-    led.pulse() // pulse the led
-    led.fadeIn() // fade to full brightness
+    led.stop()    // stop blinking or pulsing
+    led.off()     // turn led off
+    led.on()      // turn led on
+    led.pulse()   // pulse the led
+    led.fadeIn()  // fade to full brightness
     led.fadeOut() // fade to off
 
-Hit control + d on a new line in the REPL to exit and terminate the program.
+Hit control plus d on a new line in the REPL to exit and terminate the program.

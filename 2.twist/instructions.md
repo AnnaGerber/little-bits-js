@@ -34,7 +34,7 @@ Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino 
       led.on();
 
       dimmer.on("change", function() {
-        // reading will be between 0 and 1023
+        // raw value read will be between 0 and 1023
         console.log("dimmer reading " + this.raw);
         // brightness expects a value up to 255, so divide by 4
         led.brightness(Math.floor(this.raw / 4));

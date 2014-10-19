@@ -9,5 +9,5 @@ board.on("ready", function() {
     led: led
   });
   console.log("You can interact with the bargraph via the variable 'led'");
-  console.log("e.g. led.stop();\n Hit control-D to exit.\n >> ");
+  console.log("e.g. led.stop();\n Hit control-d to exit.\n >> ");
 });
