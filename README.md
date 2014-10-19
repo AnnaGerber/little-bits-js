@@ -86,7 +86,7 @@ You can download all of the project files as a zipfile [here](https://github.com
 
 ## License
 
-Copyright (c) 2014 Anna Gerber. Licensed under the MIT license.
+Copyright (c) 2014 Anna Gerber. Code licensed under the MIT license. Images and text licensed under CC-BY-SA.
 
 ## Image credits
 
