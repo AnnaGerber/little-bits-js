@@ -42,7 +42,7 @@ Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino 
 
     });
 
-You can find a copy of this code in 2.twist/twist.js
+You can find a copy of this code in [2.twist/twist.js](./twist.js)
 
 ### What you'll see
 

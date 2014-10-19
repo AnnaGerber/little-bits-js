@@ -26,10 +26,11 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
       this.repl.inject({
         led: led
       });
-      console.log("You can interact with the bargraph via the variable 'led' e.g. led.stop();\n Hit control-D to exit.\n >> ");
+      console.log("You can interact with the bargraph via the variable 'led'");
+      console.log("e.g. led.stop();\n Hit control-D to exit.\n >> ");
     });
 
-You can find a copy of this code in 1.blink/blink.js
+You can find a copy of this code in [1.blink/blink.js](./blink.js)
 
 ### What you'll see
 

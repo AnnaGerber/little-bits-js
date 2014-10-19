@@ -38,7 +38,7 @@ Connect power bit to button bit, button bit to d0 on Arduino bit, d5 on Arduino 
       });
     });
 
-You can find a copy of this code in 4.press/press.js
+You can find a copy of this code in [4.press/press.js](./press.js)
 
 ### What you'll see
 
