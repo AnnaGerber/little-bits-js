@@ -5,13 +5,13 @@ By Anna Gerber
 
 [LittleBits](http://littlebits.cc/) are modular electronic components that snap together via magnetic connectors. You can write programs to work with LittleBits circuits using the Little Bits Arduino At Heart module to read from input modules like buttons and dimmers, or to control output modules producing light, movement and sound. This tutorial will get you started with programming with LittleBits modules using JavaScript.
 
-The tutorial projects are grouped by LittleBits kit so that you can find projects that will work with the bits that you have. At a minimum, you'll need an [Arduino at Heart module](http://littlebits.cc/bits/arduino), a [power](http://littlebits.cc/shop?filter=Power) module and at least one [input](http://littlebits.cc/shop?filter=Input) or [output](http://littlebits.cc/shop?filter=Output) module.
+The tutorial projects are grouped by LittleBits kit so that you can find projects that will work with the bits that you have. At a minimum, you'll need an [Arduino At Heart module](http://littlebits.cc/bits/arduino), a [power](http://littlebits.cc/shop?filter=Power) module and at least one [input](http://littlebits.cc/shop?filter=Input) or [output](http://littlebits.cc/shop?filter=Output) module.
 
 You can download all of the project files as a zip file [here](https://github.com/AnnaGerber/little-bits-js/archive/master.zip) or visit [AnnaGerber/little-bits-js](https://github.com/AnnaGerber/little-bits-js) on GitHub.
 
 ## Preparing your development environment
 
-We'll be using the Node.js platform for running the JavaScript programs that we develop. You can download Node.js from [nodejs.org](http://nodejs.org/)
+We'll be using the Node.js platform to run the JavaScript programs that we develop. You can download Node.js from [nodejs.org](http://nodejs.org/)
 
 [Johnny-Five](https://github.com/rwaldron/johnny-five) is an Open Source Arduino programming framework for Node.js that we will use to communicate with the LittleBits Arduino At Heart Module. 
 
