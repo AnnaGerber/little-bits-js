@@ -23,20 +23,21 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
 
 ### Code
 
-    var five = require("johnny-five"), board, led;
+```javascript
+var five = require("johnny-five"), board, led;
 
-    board = new five.Board();
+board = new five.Board();
 
-    board.on("ready", function() {
-      led = new five.Led(5);
-      led.strobe( 1000 );
-      this.repl.inject({
-        led: led
-      });
-      console.log("You can interact with the bargraph via the variable 'led'");
-      console.log("e.g. led.stop();\n Hit control-d to exit.\n >> ");
-    });
-
+board.on("ready", function() {
+  led = new five.Led(5);
+  led.strobe( 1000 );
+  this.repl.inject({
+    led: led
+  });
+  console.log("You can interact with the bargraph via the variable 'led'");
+  console.log("e.g. led.stop();\n Hit control-d to exit.\n >> ");
+});
+```
 You can find a copy of this code in [1.blink/blink.js](./blink.js)
 
 Run the code from the terminal e.g.
