@@ -87,7 +87,8 @@ For any of these projects, you can substitute an alternative power module like t
 1. [Brightness](./2.brightness/instructions.md) Use a dimmer to control LED brightness
 1. [Pulse](./3.pulse/instructions.md) Use a dimmer to create an LED pulsing effect
 1. [Press](./4.press/instructions.md) Respond to button presses
-1. [Sweep](./5.move/instructions.md) Sweep a servo 
+1. [Sweep](./5.sweep/instructions.md) Sweep a servo back and forth
+1. [Turn](./6.turn/instructions.md) Turn a servo to specific positions
 
 
 ## License
