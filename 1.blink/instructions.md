@@ -42,9 +42,9 @@ You can find a copy of this code in [1.blink/blink.js](./blink.js)
 
 Run the code from the terminal e.g.
 
-```sh
-node 1.blink/blink.js
-```
+
+    node 1.blink/blink.js
+
 
 ### What you'll see
 
@@ -56,13 +56,13 @@ All of the LEDs in the bargraph will blink on and off together, once per second 
 
 Johnny-Five provides a REPL (Read-Eval-Print Loop) where you can type in commands to take effect immediately. From the REPL prompt try the following commands:
 
-```javascript
-led.stop();    // stop blinking or pulsing
-led.off();     // turn led off
-led.on();      // turn led on
-led.pulse();   // pulse the led
-led.fadeIn();  // fade to full brightness
-led.fadeOut(); // fade to off
-```
+
+    led.stop()    // stop blinking or pulsing
+    led.off()     // turn led off
+    led.on()      // turn led on
+    led.pulse()   // pulse the led
+    led.fadeIn()  // fade to full brightness
+    led.fadeOut() // fade to off
+
 
 Hit control plus d on a new line in the REPL to exit and terminate the program.
