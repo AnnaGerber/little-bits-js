@@ -16,7 +16,7 @@ Use a dimmer to control LED brightness
 
 If you don't have a bargraph, use an alternative LED bit instead e.g. [LED](http://littlebits.cc/bits/led), [Long LED](http://littlebits.cc/bits/long-led) or [Bright LED](http://littlebits.cc/bits/bright-led).
 
-### Circuit
+### Assembling the circuit
 
 Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino bit to bargraph bit. Switch the output mode for d5 on the Arduino to PWM using the onboard switch next to the connector.
 
@@ -55,6 +55,6 @@ You can find a copy of this code in [2.brightness/brightness.js](./brightness.js
 
 This project uses Pulse Width Modulation (PWM) to control the LED brightness using a value read from an analog input (the dimmer). All of the LEDs in the bargraph will increase or decrease in brightness in response to twisting the dimmer. You'll see the raw value read from the dimmer printed to the console whenever it changes.
 
-### Going further
+### What to try
 
 Try switching d5 to analog mode instead of PWM. Now, as the strengh of the signal to the bargraph increases, more LEDs in the bargraph will turn on. 

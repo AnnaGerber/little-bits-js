@@ -15,7 +15,7 @@ Blink an LED
 
 If you don't have a bargraph, use an alternative LED bit instead e.g. [LED](http://littlebits.cc/bits/led), [Long LED](http://littlebits.cc/bits/long-led) or [Bright LED](http://littlebits.cc/bits/bright-led).
 
-### Circuit
+### Assembling the circuit
 
 Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
 
@@ -45,7 +45,7 @@ A Light Emitting Diode (LED) converts electrical energy into light. The `strobe`
 
 All of the LEDs in the bargraph will blink on and off together, once per second (1000 milliseconds).
 
-### Going further
+### What to try
 
 Johnny-Five provides a REPL (Read-Eval-Print Loop) where you can type in commands to take effect immediately. From the REPL prompt try the following commands:
 

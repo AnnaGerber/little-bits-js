@@ -14,7 +14,7 @@ Respond to button presses
 ![image](../images/button.jpg)
 ![image](../images/bargraph.jpg)
 
-### Circuit
+### Assembling the circuit
 
 Connect power bit to button bit, button bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
 
@@ -49,7 +49,7 @@ You can find a copy of this code in [4.press/press.js](./press.js)
 
 When you press the button, the bargraph will toggle between on and off. The count of how many times the button has been pressed will be printed to the console.
 
-## Going further
+### What to try
 
 The modulo operator (%) is used to check whether the number of button presses is divisible by 2 to determine what action to perform on each press. You can add more actions to cycle through by increasing this value and adding additional `else if` statements e.g.
 
