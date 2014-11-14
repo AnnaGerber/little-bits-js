@@ -21,22 +21,24 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to servo bit. Flick th
 
 ### Code
 
-    var five = require("johnny-five"), 
-      board, servo;
+```javascript
+var five = require("johnny-five"), 
+  board, servo;
 
-    board = new five.Board();
+board = new five.Board();
 
-    board.on("ready", function() {
+board.on("ready", function() {
 
-      var servo = new five.Motor(5);
+  var servo = new five.Motor(5);
 
-      servo.start();
+  servo.start();
 
-      this.repl.inject({
-        servo: servo
-      });
-      
-    });
+  this.repl.inject({
+    servo: servo
+  });
+  
+});
+```
 
 You can find a copy of this code in [5.turn/turn.js](./turn.js)
 

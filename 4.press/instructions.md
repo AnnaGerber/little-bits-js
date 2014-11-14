@@ -22,26 +22,28 @@ Connect power bit to button bit, button bit to d0 on Arduino bit, d5 on Arduino 
 
 ### Code
 
-    var five = require("johnny-five"), 
-      board, led, button,
-      buttonCounter = 0;
+```javascript
+var five = require("johnny-five"), 
+  board, led, button,
+  buttonCounter = 0;
 
-    board = new five.Board();
+board = new five.Board();
 
-    board.on("ready", function() {
-      led = new five.Led(5);
-      button = new five.Button(0);
+board.on("ready", function() {
+  led = new five.Led(5);
+  button = new five.Button(0);
 
-      button.on("press", function(value){
-        buttonCounter++;
-        if (buttonCounter % 2 === 0) {
-          led.off();
-        } else {
-          led.on();
-        }
-        console.log("button has been pressed " + buttonCounter + " times");
-      });
-    });
+  button.on("press", function(value){
+    buttonCounter++;
+    if (buttonCounter % 2 === 0) {
+      led.off();
+    } else {
+      led.on();
+    }
+    console.log("button has been pressed " + buttonCounter + " times");
+  });
+});
+```
 
 You can find a copy of this code in [4.press/press.js](./press.js)
 

@@ -22,24 +22,26 @@ Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino 
 
 ### Code
 
-    var five = require("johnny-five"), 
-      board, led, dimmer;
+```javascript
+var five = require("johnny-five"), 
+  board, led, dimmer;
 
-    board = new five.Board();
+board = new five.Board();
 
-    board.on("ready", function() {
-      led = new five.Led(5);
-      dimmer = new five.Sensor({
-        pin: "A0",
-        freq: 250
-      });
+board.on("ready", function() {
+  led = new five.Led(5);
+  dimmer = new five.Sensor({
+    pin: "A0",
+    freq: 250
+  });
 
-      dimmer.on("change", function() {
-        console.log("dimmer reading " + this.raw);
-        // as dimmer value increases, the pulse duration will approach 0
-        led.pulse(1023 - this.raw);
-      });
-    });
+  dimmer.on("change", function() {
+    console.log("dimmer reading " + this.raw);
+    // as dimmer value increases, the pulse duration will approach 0
+    led.pulse(1023 - this.raw);
+  });
+});
+```
 
 You can find a copy of this code in [3.pulse/pulse.js](./pulse.js)
 

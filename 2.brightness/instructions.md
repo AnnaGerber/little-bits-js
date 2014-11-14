@@ -24,31 +24,32 @@ Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino 
 
 ### Code
 
-    var five = require("johnny-five"),
-      board, led, dimmer;
+```javascript
+var five = require("johnny-five"),
+  board, led, dimmer;
 
-    board = new five.Board();
+board = new five.Board();
 
-    board.on("ready", function() {
-      
-      led = new five.Led(5);
+board.on("ready", function() {
+  
+  led = new five.Led(5);
 
-      dimmer = new five.Sensor({
-        pin: "A0",
-        freq: 250
-      });
-      
-      led.on();
+  dimmer = new five.Sensor({
+    pin: "A0",
+    freq: 250
+  });
+  
+  led.on();
 
-      dimmer.on("change", function() {
-        // raw value read will be between 0 and 1023
-        console.log("dimmer reading " + this.raw);
-        // brightness expects a value up to 255, so divide by 4
-        led.brightness(Math.floor(this.raw / 4));
-      });
+  dimmer.on("change", function() {
+    // raw value read will be between 0 and 1023
+    console.log("dimmer reading " + this.raw);
+    // brightness expects a value up to 255, so divide by 4
+    led.brightness(Math.floor(this.raw / 4));
+  });
 
-    });
-
+});
+```
 You can find a copy of this code in [2.brightness/brightness.js](./brightness.js)
 
 Run the code from the terminal e.g.
