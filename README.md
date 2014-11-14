@@ -1,5 +1,5 @@
 
-# Programming Little Bits circuits using JavaScript
+# Programming LittleBits with JavaScript
 
 By Anna Gerber
 
