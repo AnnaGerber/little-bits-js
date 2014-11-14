@@ -37,6 +37,10 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to servo bit. Flick th
 
 You can find a copy of this code in [6.turn/turn.js](./turn.js)
 
+Run the code from the terminal e.g.
+
+    node 6.turn/turn.js
+
 ### What you'll see
 
 This project shows how we can write directly to pins via the board object.

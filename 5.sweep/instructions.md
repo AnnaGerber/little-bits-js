@@ -40,6 +40,9 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to servo bit. Flick th
 
 You can find a copy of this code in [5.turn/turn.js](./turn.js)
 
+Run the code from the terminal e.g.
+
+    node 5.sweet/sweep.js
 
 ### What you'll see
 

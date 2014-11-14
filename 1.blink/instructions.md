@@ -39,6 +39,10 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
 
 You can find a copy of this code in [1.blink/blink.js](./blink.js)
 
+Run the code from the terminal e.g.
+
+    node 1.blink/blink.js
+
 ### What you'll see
 
 A Light Emitting Diode (LED) converts electrical energy into light. The `strobe` function blinks the LED module on and off by varying the signal on the I/O pin to which the LED is connected between on (5V) and off.

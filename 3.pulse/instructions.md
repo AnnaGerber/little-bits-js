@@ -43,6 +43,10 @@ Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino 
 
 You can find a copy of this code in [3.pulse/pulse.js](./pulse.js)
 
+Run the code from the terminal e.g.
+
+    node 3.pulse/pulse.js
+
 ### What you'll see
 
 As you turn the dimmer clockwise, the speed at which the LEDs in the bargraph pulse will increase. The raw value read from the dimmer will be printed to the console.

@@ -45,6 +45,10 @@ Connect power bit to button bit, button bit to d0 on Arduino bit, d5 on Arduino 
 
 You can find a copy of this code in [4.press/press.js](./press.js)
 
+Run the code from the terminal e.g.
+
+    node 4.press/press.js
+
 ### What you'll see
 
 When you press the button, the bargraph will toggle between on and off. The count of how many times the button has been pressed will be printed to the console.
