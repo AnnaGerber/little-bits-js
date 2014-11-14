@@ -4,11 +4,16 @@ Blink an LED
 
 ### Bits you'll need
 
-1 x [Arduino](http://littlebits.cc/bits/arduino), 1 x [power](http://littlebits.cc/bits/littlebits-power), 1 x [bargraph](http://littlebits.cc/bits/bargraph)
+* 1 x [Arduino](http://littlebits.cc/bits/arduino)
+* 1 x [power](http://littlebits.cc/bits/littlebits-power)
+* 1 x [bargraph](http://littlebits.cc/bits/bargraph) 
 
 ![image](../images/arduino.jpg)
 ![image](../images/power.jpg)
 ![image](../images/bargraph.jpg)
+
+
+If you don't have a bargraph, use an alternative LED bit instead e.g. [LED](http://littlebits.cc/bits/led), [Long LED](http://littlebits.cc/bits/long-led) or [Bright LED](http://littlebits.cc/bits/bright-led).
 
 ### Circuit
 
@@ -35,6 +40,8 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.
 You can find a copy of this code in [1.blink/blink.js](./blink.js)
 
 ### What you'll see
+
+A Light Emitting Diode (LED) converts electrical energy into light. The `strobe` function blinks the LED module on and off by varying the signal on the I/O pin to which the LED is connected between on (5V) and off.
 
 All of the LEDs in the bargraph will blink on and off together, once per second (1000 milliseconds).
 

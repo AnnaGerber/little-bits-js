@@ -2,11 +2,12 @@
 
 Use a dimmer to create an LED pulsing effect
 
-
-
 ### Bits you'll need
 
-1 x [Arduino](http://littlebits.cc/bits/arduino), 1 x [power](http://littlebits.cc/bits/littlebits-power), 1 x [dimmer](http://littlebits.cc/bits/dimmer), 1 x [bargraph](http://littlebits.cc/bits/bargraph)
+ * 1 x [Arduino](http://littlebits.cc/bits/arduino)
+ * 1 x [power](http://littlebits.cc/bits/littlebits-power)
+ * 1 x [dimmer](http://littlebits.cc/bits/dimmer)
+ * 1 x [bargraph](http://littlebits.cc/bits/bargraph)
 
 ![image](../images/arduino.jpg)
 ![image](../images/power.jpg)

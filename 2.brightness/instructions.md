@@ -4,12 +4,17 @@ Use a dimmer to control LED brightness
 
 ### Bits you'll need
 
-1 x [Arduino](http://littlebits.cc/bits/arduino), 1 x [power](http://littlebits.cc/bits/littlebits-power), 1 x [dimmer](http://littlebits.cc/bits/dimmer), 1 x [bargraph](http://littlebits.cc/bits/bargraph)
+ * 1 x [Arduino](http://littlebits.cc/bits/arduino)
+ * 1 x [power](http://littlebits.cc/bits/littlebits-power)
+ * 1 x [dimmer](http://littlebits.cc/bits/dimmer)
+ * 1 x [bargraph](http://littlebits.cc/bits/bargraph)
 
 ![image](../images/arduino.jpg)
 ![image](../images/power.jpg)
 ![image](../images/dimmer.jpg)
 ![image](../images/bargraph.jpg)
+
+If you don't have a bargraph, use an alternative LED bit instead e.g. [LED](http://littlebits.cc/bits/led), [Long LED](http://littlebits.cc/bits/long-led) or [Bright LED](http://littlebits.cc/bits/bright-led).
 
 ### Circuit
 

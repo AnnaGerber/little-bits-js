@@ -4,7 +4,10 @@ Respond to button presses
 
 ### Bits you'll need
 
-1 x [Arduino](http://littlebits.cc/bits/arduino), 1 x [power](http://littlebits.cc/bits/littlebits-power), 1 x [button](http://littlebits.cc/bits/button), 1 x [bargraph](http://littlebits.cc/bits/bargraph)
+ * 1 x [Arduino](http://littlebits.cc/bits/arduino)
+ * 1 x [power](http://littlebits.cc/bits/littlebits-power)
+ * 1 x [button](http://littlebits.cc/bits/button)
+ * 1 x [bargraph](http://littlebits.cc/bits/bargraph)
 
 ![image](../images/arduino.jpg)
 ![image](../images/power.jpg)
