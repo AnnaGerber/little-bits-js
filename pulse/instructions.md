@@ -51,7 +51,9 @@ Run the code from the terminal e.g.
 
 ### What you'll see
 
-As you turn the dimmer clockwise, the speed at which the LEDs in the bargraph pulse will increase. The raw value read from the dimmer will be printed to the console.
+As you turn the dimmer clockwise, the speed at which the LEDs in the bargraph pulse will increase. The raw value read from the dimmer will be printed to the console. 
+
+The `pulse` method takes a parameter that indicates the duration of each pulse in milliseconds. The led will continue to pulse indefinitely after `pulse` has been called. You can use the `stop` method to stop the led from pulsing.
 
 ### What to try
 
