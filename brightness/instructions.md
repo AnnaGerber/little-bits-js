@@ -58,8 +58,26 @@ Run the code from the terminal e.g.
 
 ### What you'll see
 
-This project uses Pulse Width Modulation (PWM) to control the LED brightness using a value read from an analog input (the dimmer). All of the LEDs in the bargraph will increase or decrease in brightness in response to twisting the dimmer. You'll see the raw value read from the dimmer printed to the console whenever it changes.
+The `change` event is triggered whenever the dimmer value changes. We have attached an anonymous event handler function that will run whenever the event is triggered. 
+
+All of the LEDs in the bargraph will increase or decrease in brightness in response to twisting the dimmer.  You'll also see the raw value read from the dimmer printed to the console whenever the value changes.
 
 ### What to try
 
-Try switching d5 to analog mode instead of PWM. Now, as the strengh of the signal to the bargraph increases, more LEDs in the bargraph will turn on. 
+This project uses Pulse Width Modulation (PWM) to control the LED brightness using a value read from an analog input (the dimmer). 
+
+The brightness method takes a value between 0 and 255. Try injecting the led into the REPL and setting the brightness directly: 
+
+```javascript
+led.brightness(255) // maximum brightness
+```
+
+Try switching d5 to analog mode instead of PWM. Now, as the strengh of the signal to the bargraph increases, more LEDs in the bargraph will turn on.
+
+What's going on? The signals that we send and receive on the I/O pins are either discrete _digital_ values (high (5V) or low (0)), or _analog_ (any voltage value in a continuous range between 0 and 5). PWM is used to simulate an analog signal on a digital pin by alternating between high and low signal for different durations in cycles, with the average value of the highs and lows across each cycle representing the simulated analog value. When we switch pin d5 to analog mode, the PWM signal that we are sending to pin 5 gets passed through a low pass filter that takes the average voltage and outputs a continuous analog signal. This is a unique feature of the LittleBits Arduino at Heart module. The bargraph responds differently to the PWM vs analog signal.
+
+Note: we can use the Sensor class to read from any input module. We have specified our dimmer pin as "A0" - the "A" indicates that it is an analog rather than digital pin, while our led pin is digital and is specified as a number.
+
+
+
+
