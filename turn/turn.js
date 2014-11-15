@@ -1,5 +1,5 @@
 var five = require("johnny-five"), 
-  board, servo;
+  board;
 
 board = new five.Board();
 

@@ -14,6 +14,8 @@ Respond to button presses
 ![image](../images/button.jpg)
 ![image](../images/bargraph.jpg)
 
+This project also works with a [sound-trigger](http://littlebits.cc/bits/sound-trigger) or [roller-switch](http://littlebits.cc/bits/roller-switch) in place of the button.
+
 ### Assembling the circuit
 
 Connect power bit to button bit, button bit to d0 on Arduino bit, d5 on Arduino bit to bargraph bit.

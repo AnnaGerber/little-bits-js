@@ -24,7 +24,8 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to bargraph (or LED) b
 ### Code
 
 ```javascript
-var five = require("johnny-five"), board, led;
+var five = require("johnny-five"), 
+  board, led;
 
 board = new five.Board();
 

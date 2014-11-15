@@ -12,6 +12,7 @@ Move a DC motor
 ![image](../images/power.jpg)
 ![image](../images/dc-motor.jpg)
 
+The code in this project will also work with other output bits that move including the [fan]() and [vibration-motor]()
 
 ### Assembling the circuit
 
@@ -32,7 +33,7 @@ board = new five.Board();
 
 board.on("ready", function() {
 
-  var motor = new five.Motor(5);
+  motor = new five.Motor(5);
 
   motor.start();
   
@@ -45,8 +46,6 @@ board.on("ready", function() {
   });
 });
 ```
-
-WARNING: I expect that this code should work but it has not been tested because I don't have a DC motor module yet.
 
 You can find a copy of this code in [move/move.js](./move.js)
 

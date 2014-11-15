@@ -23,7 +23,7 @@ Connect power bit to d0 on Arduino bit, d5 on Arduino bit to servo bit. Flick th
 
 ```javascript
 var five = require("johnny-five"), 
-  board, servo;
+  board;
 
 board = new five.Board();
 

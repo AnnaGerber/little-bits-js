@@ -16,6 +16,8 @@ Use a dimmer to control LED brightness
 
 If you don't have a bargraph, use an alternative LED bit instead e.g. [LED](http://littlebits.cc/bits/led), [Long LED](http://littlebits.cc/bits/long-led) or [Bright LED](http://littlebits.cc/bits/bright-led).
 
+If you don't have a dimmer, you can use a [slide-dimmer](http://littlebits.cc/bits/slide-dimmer) instead.
+
 ### Assembling the circuit
 
 Connect power bit to dimmer bit, dimmer bit to a0 on Arduino bit, d5 on Arduino bit to bargraph bit. Switch the output mode for d5 on the Arduino to PWM using the onboard switch next to the connector.
@@ -76,8 +78,4 @@ Try switching d5 to analog mode instead of PWM. Now, as the strengh of the signa
 
 What's going on? The signals that we send and receive on the I/O pins are either discrete _digital_ values (high (5V) or low (0)), or _analog_ (any voltage value in a continuous range between 0 and 5). PWM is used to simulate an analog signal on a digital pin by alternating between high and low signal for different durations in cycles, with the average value of the highs and lows across each cycle representing the simulated analog value. When we switch pin d5 to analog mode, the PWM signal that we are sending to pin 5 gets passed through a low pass filter that takes the average voltage and outputs a continuous analog signal. This is a unique feature of the LittleBits Arduino at Heart module. The bargraph responds differently to the PWM vs analog signal.
 
-Note: we can use the Sensor class to read from any input module. We have specified our dimmer pin as "A0" - the "A" indicates that it is an analog rather than digital pin, while our led pin is digital and is specified as a number.
-
-
-
-
+Note: we can use the Sensor class to read from any input module. We have specified our dimmer pin as the string "A0" - the "A" indicates that it is an analog rather than digital pin, while our led pin is digital and is specified as a number.
