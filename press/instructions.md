@@ -45,11 +45,11 @@ board.on("ready", function() {
 });
 ```
 
-You can find a copy of this code in [4.press/press.js](./press.js)
+You can find a copy of this code in [press/press.js](./press.js)
 
 Run the code from the terminal e.g.
 
-    node 4.press/press.js
+    node press/press.js
 
 ### What you'll see
 

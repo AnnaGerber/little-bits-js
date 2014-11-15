@@ -38,12 +38,12 @@ board.on("ready", function() {
   console.log("e.g. led.stop();\n Hit control-d to exit.\n >> ");
 });
 ```
-You can find a copy of this code in [1.blink/blink.js](./blink.js)
+You can find a copy of this code in [blink/blink.js](./blink.js)
 
 Run the code from the terminal e.g.
 
 
-    node 1.blink/blink.js
+    node blink/blink.js
 
 
 ### What you'll see

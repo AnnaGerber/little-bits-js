@@ -50,11 +50,11 @@ board.on("ready", function() {
 
 });
 ```
-You can find a copy of this code in [2.brightness/brightness.js](./brightness.js)
+You can find a copy of this code in [brightness/brightness.js](./brightness.js)
 
 Run the code from the terminal e.g.
 
-    node 2.brightness/brightness.js
+    node brightness/brightness.js
 
 ### What you'll see
 

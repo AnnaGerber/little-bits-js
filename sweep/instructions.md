@@ -40,11 +40,11 @@ board.on("ready", function() {
 });
 ```
 
-You can find a copy of this code in [5.turn/turn.js](./turn.js)
+You can find a copy of this code in [sweep/sweep.js](./sweep.js)
 
 Run the code from the terminal e.g.
 
-    node 5.sweet/sweep.js
+    node sweep/sweep.js
 
 ### What you'll see
 

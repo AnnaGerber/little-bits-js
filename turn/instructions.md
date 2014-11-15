@@ -37,11 +37,11 @@ board.on("ready", function() {
 });
 ```
 
-You can find a copy of this code in [6.turn/turn.js](./turn.js)
+You can find a copy of this code in [turn/turn.js](./turn.js)
 
 Run the code from the terminal e.g.
 
-    node 6.turn/turn.js
+    node turn/turn.js
 
 ### What you'll see
 

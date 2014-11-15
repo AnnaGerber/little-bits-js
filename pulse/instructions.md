@@ -43,11 +43,11 @@ board.on("ready", function() {
 });
 ```
 
-You can find a copy of this code in [3.pulse/pulse.js](./pulse.js)
+You can find a copy of this code in [pulse/pulse.js](./pulse.js)
 
 Run the code from the terminal e.g.
 
-    node 3.pulse/pulse.js
+    node pulse/pulse.js
 
 ### What you'll see
 
