@@ -1,0 +1,7 @@
+{
+  "name": "little-bits-js",
+  "version": "0.0.0",
+  "dependencies": {
+    "johnny-five": "^0.8.24"
+  }
+}
