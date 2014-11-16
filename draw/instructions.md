@@ -54,7 +54,7 @@ board.on("ready", function() {
 
   io.listen(server).on('connection', function (socket) {
     
-    // start broadcasting the X, Y values to the client
+    // send the X, Y values to the client
     joystick.on("axismove", function(err, timestamp) {
       console.log(this.fixed.x, this.fixed.y);
       socket.emit('drawing', this.fixed);
