@@ -28,7 +28,6 @@
 
       socket.on('drawing', function (data) {
         $('#status').html('Connected (x: ' + data.x + ', y: ' + data.y + ')');
-        var pos = {};
         // scale values to match canvas size
         data.x *= 600;
         data.y *= 400;

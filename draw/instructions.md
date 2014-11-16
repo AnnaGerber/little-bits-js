@@ -30,7 +30,8 @@ var five = require("johnny-five"),
   io = require('socket.io'),
   io = require('socket.io'),
   fs = require('fs'),
-  board, joystick;
+  board, joystick,
+  html, server;
 
 board = new five.Board();
 
@@ -43,10 +44,10 @@ board.on("ready", function() {
   });
 
   // load our draw.html page from file
-  var html = fs.readFileSync('draw.html').toString();
+  html = fs.readFileSync('draw.html').toString();
 
   // create web server 
-  var server = http.createServer(function (req, res) { 
+  server = http.createServer(function (req, res) { 
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end(html);
   });
@@ -83,7 +84,6 @@ $('#clear').click(function(){
 
 socket.on('drawing', function (data) {
   $('#status').html('Connected (x: ' + data.x + ', y: ' + data.y + ')');
-  var pos = {};
   // scale values to match canvas size
   data.x *= 600;
   data.y *= 400;
