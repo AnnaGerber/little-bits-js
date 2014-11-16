@@ -13,7 +13,7 @@ Projects by Kit:
  * [Base Kit](#working-with-the-base-kit)
  * [Premium Kit](#working-with-the-premium-kit)
  * [Deluxe Kit](#working-with-the-deluxe-kit)
- <!--* [KORG Synth Kit](#making-sounds-with-the-korg-synth-kit)-->
+ * [KORG Synth Kit](#making-sounds-with-the-korg-synth-kit)
  * [Space Kit](#reach-for-the-stars-with-the-space-kit)
  * [Hardware Development Kit](#inifinity-and-beyond-with-the-hardware-development-kit)
 
@@ -65,7 +65,6 @@ These projects will get your started with programming LittleBits modules with Ja
 1. [Press](./press/instructions.md) Respond to button presses
 1. [Sweep](./sweep/instructions.md) Sweep a servo back and forth
 1. [Turn](./turn/instructions.md) Turn a servo to specific positions
-<!-- 1. [Draw](./draw/instructions.md) Use dimmers to draw like an Etch-a-sketch. -->
 
 ### Bits you'll need
 
@@ -77,7 +76,7 @@ All of the bits for the _Getting Started_ projects are included in the Arduino C
 ![image](images/fork.jpg)
 
 * 1 x [Arduino At Heart](http://littlebits.cc/bits/arduino) (Used in all projects)
-* 1 x [fork](http://littlebits.cc/bits/fork) <!-- (Used in [Draw](./draw/instructions.md)) -->
+* 1 x [fork](http://littlebits.cc/bits/fork) 
 
 #### Power (blue)
 
@@ -93,7 +92,7 @@ For any of these projects, you can substitute an alternative power module like t
 ![image](images/dimmer.jpg)
 
 * 1 x [button](http://littlebits.cc/bits/button) (Used in [Press](./press/instructions.md))
-* 2 x [dimmer](http://littlebits.cc/bits/dimmer) (Used in [Brightness](./brightness/instructions.md), [Pulse](./pulse/instructions.md)<!-- and [Draw](./draw/instructions.md)-->)
+* 2 x [dimmer](http://littlebits.cc/bits/dimmer) (Used in [Brightness](./brightness/instructions.md), [Pulse](./pulse/instructions.md))
 
 #### Outputs (green)
 
@@ -113,7 +112,6 @@ If you have the [Base Kit](http://littlebits.cc/kits/base-kit) and an [Arduino A
 1. [Press](./press/instructions.md) Respond to button presses or triggers
 1. [Move](./move/instructions.md) Move a DC motor
 1. [Sense](./sense/instructions.md) Read from an analog sensor
-<!--- 1. [Buzz](./buzz/instructions.md) --->
 
 ### Bits you'll need
 
@@ -144,12 +142,11 @@ If you have the [Base Kit](http://littlebits.cc/kits/base-kit) and an [Arduino A
 ![image](images/bargraph.jpg)
 ![image](images/bright-led.jpg)
 ![image](images/dc-motor.jpg)
-<!-- ![image](images/buzzer.jpg)-->
 
 * 1 x [bargraph](http://littlebits.cc/bits/bargraph) (Used in [Blink](./blink/instructions.md) and [Brightness](./brightness/instructions.md))
 * 1 x [bright-led](http://littlebits.cc/bits/bright-led) (Can be used in [Blink](./blink/instructions.md) and [Brightness](./brightness/instructions.md))
 * 1 x [dc-motor](http://littlebits.cc/bits/dc-motor) (Used in [Move](./move/instructions.md))
-<!-- * 1 x [buzzer](http://littlebits.cc/bits/buzzer) (Used in [Buzz](./buzz/instructions.md)) -->
+
 
 ## Working with the Premium Kit
 
@@ -252,7 +249,6 @@ You can make these projects with the [Deluxe Kit](http://littlebits.cc/kits/delu
 * 1 x [servo](http://littlebits.cc/bits/servo) (Used in [Sweep](./sweep/instructions.md) and [Turn](./turn/instructions.md))
 * 1 x [dc-motor](http://littlebits.cc/bits/dc-motor) (Used in [Move](./move/instructions.md))
 
-<!--
 ## Making Sounds with the KORG Synth Kit
 
 Combine the [Arduino At Heart](http://littlebits.cc/bits/arduino) module with the [Synth Kit](http://littlebits.cc/kits/synth-kit) and you'll be making amazing sounds in no time!
@@ -277,9 +273,7 @@ Combine the [Arduino At Heart](http://littlebits.cc/bits/arduino) module with th
 
 ![image](images/speaker.jpg)
 
-* 1 x [speaker](http://littlebits.cc/bits/speaker) (Used in [Sound](./sound/instructions.md))
-
--->
+* 1 x [speaker](http://littlebits.cc/bits/speaker) 
 
 ## Reach for the stars with the Space Kit
 
@@ -318,19 +312,18 @@ You can build these projects with bits from the [Space Kit](http://littlebits.cc
 ![image](images/bright-led.jpg)
 ![image](images/ir-led.jpg)
 ![image](images/dc-motor.jpg)
-<!--![image](images/speaker.jpg)-->
+![image](images/speaker.jpg)
 
 * 1 x [bright-led](http://littlebits.cc/bits/bright-led) (Can be used in [Blink](./blink/instructions.md))
 * 1 x [ir-led](http://littlebits.cc/bits/ir-led) (Can be used in [Blink](./blink/instructions.md))
 * 1 x [dc-motor](http://littlebits.cc/bits/dc-motor) (Used in [Move](./move/instructions.md))
-<!--* 1 x [speaker](http://littlebits.cc/bits/speaker) (Used in [Sound](./sound/instructions.md))-->
+* 1 x [speaker](http://littlebits.cc/bits/speaker)
 
 ## Infinity and Beyond with the Hardware Development Kit
 
 Build and program your own bits!
 
 1. [Proto Input](./proto-in/instructions.md) Program your own input module
-<!--- 1. [Proto Output](./proto-out/instructions.md) Program your own output module --->
 
 ### Bits you'll need
 
@@ -359,10 +352,6 @@ Build and program your own bits!
 1. [Move](./move/instructions.md) Move a DC motor
 1. [Sense](./sense/instructions.md) Read from an analog sensor
 1. [Proto Input](./proto-in/instructions.md) Program your own input module
-<!-- 1. [Sound](./sound/instructions.md) Make sound with a speaker -->
-<!-- 1. [Draw](./draw/instructions.md) Use dimmers to draw like an Etch-a-sketch.-->
-<!--- 1. [Proto Output](./proto-out/instructions.md) Program your own output module --->
-<!--- 1. [Buzz](./buzz/instructions.md) --->
 
 More projects coming soon!
 
