@@ -7,14 +7,17 @@ Read from analog sensors / inputs
  * 1 x [Arduino](http://littlebits.cc/bits/arduino)
  * 1 x [power](http://littlebits.cc/bits/littlebits-power)
 
- Plus any analog input bit e.g. [pressure-sensor](http://littlebits.cc/bits/pressure-sensor), [light-sensor](http://littlebits.cc/bits/light-sensor), [slide-dimmer](http://littlebits.cc/bits/slide-dimmer), [dimmer](http://littlebits.cc/bits/dimmer).
-
 ![image](../images/arduino.jpg)
 ![image](../images/power.jpg)
+
+ Plus any analog input bit e.g. [pressure-sensor](http://littlebits.cc/bits/pressure-sensor), [light-sensor](http://littlebits.cc/bits/light-sensor), [slide-dimmer](http://littlebits.cc/bits/slide-dimmer), [bend-sensor](http://littlebits.cc/bits/bend-sensor), [dimmer](http://littlebits.cc/bits/dimmer).
+
+
 ![image](../images/pressure-sensor.jpg)
 ![image](../images/light-sensor.jpg)
-![image](../images/dimmer.jpg)
 ![image](../images/slide-dimmer.jpg)
+![image](../images/dimmer.jpg)
+
 
 Optionally you can use a [branch](http://littlebits.cc/bits/branch) and [wire](http://littlebits.cc/bits/wire-bit) bits or [fork](http://littlebits.cc/bits/fork) to connect multiple sensors
 
