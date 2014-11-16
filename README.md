@@ -55,6 +55,8 @@ You can run the JavaScript programs that you create using Node.js from the comma
 
     node blink/blink.js
 
+Note: you'll need to wait a few seconds after plugging in the Arduino before running the program to give the Arduino time to power up. If see see an error like 'Error: Serialport not open.' try running the program again.
+
 ## Getting Started with the Arduino Coding Kit
 
 These projects will get your started with programming LittleBits modules with JavaScript using the [Arduino Coding Kit](http://littlebits.cc/kits/arduino-coding-kit) (previously known as Arduino Starter Bundle).
@@ -65,6 +67,7 @@ These projects will get your started with programming LittleBits modules with Ja
 1. [Press](./press/instructions.md) Respond to button presses
 1. [Sweep](./sweep/instructions.md) Sweep a servo back and forth
 1. [Turn](./turn/instructions.md) Turn a servo to specific positions
+1. [Draw](./draw/instructions.md) Use dimmers to draw like an Etch-a-sketch.
 
 ### Bits you'll need
 
@@ -76,7 +79,7 @@ All of the bits for the _Getting Started_ projects are included in the Arduino C
 ![image](images/fork.jpg)
 
 * 1 x [Arduino At Heart](http://littlebits.cc/bits/arduino) (Used in all projects)
-* 1 x [fork](http://littlebits.cc/bits/fork) 
+* 1 x [fork](http://littlebits.cc/bits/fork) (Used in [Draw](./draw/instructions.md))
 
 #### Power (blue)
 
@@ -92,7 +95,7 @@ For any of these projects, you can substitute an alternative power module like t
 ![image](images/dimmer.jpg)
 
 * 1 x [button](http://littlebits.cc/bits/button) (Used in [Press](./press/instructions.md))
-* 2 x [dimmer](http://littlebits.cc/bits/dimmer) (Used in [Brightness](./brightness/instructions.md), [Pulse](./pulse/instructions.md))
+* 2 x [dimmer](http://littlebits.cc/bits/dimmer) (Used in [Brightness](./brightness/instructions.md), [Pulse](./pulse/instructions.md) and [Draw](./draw/instructions.md))
 
 #### Outputs (green)
 
@@ -351,6 +354,7 @@ Build and program your own bits!
 1. [Turn](./turn/instructions.md) Turn a servo to specific positions
 1. [Move](./move/instructions.md) Move a DC motor
 1. [Sense](./sense/instructions.md) Read from an analog sensor
+1. [Draw](./draw/instructions.md) Use dimmers to draw like an Etch-a-sketch.
 1. [Proto Input](./proto-in/instructions.md) Program your own input module
 
 More projects coming soon!

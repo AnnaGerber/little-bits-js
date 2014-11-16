@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>        
+      <title>Draw</title>
+  </head>
+  <body>
+    <div id="status">Connecting...</div>
+
+    <button id="clear">Clear</button>
+
+    <canvas id="canvas" width="600" height="400"></canvas>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+
+    <script type="text/javascript">
+
+      var socket = io('http://localhost:3000'),
+        context = $('#canvas')[0].getContext('2d'),
+        prev;
+
+      context.strokeStyle='blue';
+
+      $('#clear').click(function(){
+        context.clearRect(0,0,600,400);
+        context.beginPath();
+      });
+
+      socket.on('drawing', function (data) {
+        $('#status').html('Connected (x: ' + data.x + ', y: ' + data.y + ')');
+        var pos = {};
+        // scale values to match canvas size
+        data.x *= 600;
+        data.y *= 400;
+        // if values have changed, draw a line to the new position
+        if (prev && (prev.x != data.x || prev.y != data.y)) {
+          context.moveTo(prev.x, prev.y);
+          context.lineTo(data.x, data.y);
+          context.stroke();    
+        }
+        prev = data;
+      });
+
+      socket.on('disconnect', function() {
+        $('#status').html('Disconnected');
+      });
+
+    </script>
+  </body>
+</html>

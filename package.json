@@ -2,6 +2,7 @@
   "name": "little-bits-js",
   "version": "0.0.0",
   "dependencies": {
-    "johnny-five": "^0.8.24"
+    "johnny-five": "^0.8.24",
+    "socket.io": "^1.2.0"
   }
 }
