@@ -16,6 +16,12 @@ Read from analog sensors / inputs
 ![image](../images/dimmer.jpg)
 ![image](../images/slide-dimmer.jpg)
 
+Optionally you can use a [branch](http://littlebits.cc/bits/branch) and [wire](http://littlebits.cc/bits/wire-bit) bits or [fork](http://littlebits.cc/bits/fork) to connect multiple sensors
+
+![image](../images/wire.jpg)
+![image](../images/branch.jpg)
+![image](../images/fork.jpg)
+
 ### Assembling the circuit
 
 Connect power bit to sensor bit, input bit to a0 on Arduino bit.
