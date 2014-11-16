@@ -14,7 +14,7 @@ Respond to button presses
 ![image](../images/button.jpg)
 ![image](../images/bargraph.jpg)
 
-This project also works with a [sound-trigger](http://littlebits.cc/bits/sound-trigger) or [roller-switch](http://littlebits.cc/bits/roller-switch) in place of the button.
+This project also works with a [sound-trigger](http://littlebits.cc/bits/sound-trigger), [motion-trigger](http://littlebits.cc/bits/motion-trigger), [remote-trigger](http://littlebits.cc/bits/remote-trigger) or [roller-switch](http://littlebits.cc/bits/roller-switch) in place of the button.
 
 ### Assembling the circuit
 
