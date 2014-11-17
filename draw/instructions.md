@@ -85,17 +85,9 @@ var socket = io('http://localhost:3000'),
 
 context.strokeStyle='blue';
 
-function clear() {
+socket.on('clear', function(){
   context.clearRect(0,0,600,400);
   context.beginPath();
-}
-
-$('#clear').click(function(){
-  clear();
-});
-
-socket.on('clear', function(){
-  clear();
 });
 
 socket.on('drawing', function (data) {

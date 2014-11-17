@@ -6,8 +6,6 @@
   <body>
     <div id="status">Connecting...</div>
 
-    <button id="clear">Clear</button>
-
     <canvas id="canvas" width="600" height="400"></canvas>
 
     <script src="/socket.io/socket.io.js"></script>
@@ -21,19 +19,11 @@
 
       context.strokeStyle='blue';
 
-      function clear() {
+      socket.on('clear', function(){
         context.clearRect(0,0,600,400);
         context.beginPath();
-      }
-
-      $('#clear').click(function(){
-        clear();
       });
 
-      socket.on('clear', function(){
-        clear();
-      });
-      
       socket.on('drawing', function (data) {
         $('#status').html('Connected (x: ' + data.x + ', y: ' + data.y + ')');
         // scale values to match canvas size
