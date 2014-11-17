@@ -94,7 +94,7 @@ For any of these projects, you can substitute an alternative power module like t
 ![image](images/button.jpg)
 ![image](images/dimmer.jpg)
 
-* 1 x [button](http://littlebits.cc/bits/button) (Used in [Press](./press/instructions.md))
+* 1 x [button](http://littlebits.cc/bits/button) (Used in [Press](./press/instructions.md) and [Draw](./draw/instructions.md))
 * 2 x [dimmer](http://littlebits.cc/bits/dimmer) (Used in [Brightness](./brightness/instructions.md), [Pulse](./pulse/instructions.md) and [Draw](./draw/instructions.md))
 
 #### Outputs (green)
