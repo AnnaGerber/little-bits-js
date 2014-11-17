@@ -3,7 +3,7 @@ var five = require("johnny-five"),
   io = require('socket.io'),
   io = require('socket.io'),
   fs = require('fs'),
-  board, joystick
+  board, joystick, button,
   html, server;
 
 board = new five.Board();
@@ -15,6 +15,8 @@ board.on("ready", function() {
     pins: ["A1", "A0"],
     freq: 100
   });
+
+  button = new five.Button(0);
 
   // load our draw.html page from file
   html = fs.readFileSync('draw.html').toString();
@@ -33,7 +35,11 @@ board.on("ready", function() {
       socket.emit('drawing', this.fixed);
     });
 
+    button.on("press", function(value){
+      socket.emit('clear');
+    });
   });
+  
   // run web server on http://localhost:3000
   server.listen(3000);
 });

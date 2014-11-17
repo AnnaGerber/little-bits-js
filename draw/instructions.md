@@ -8,15 +8,17 @@ Use dimmers to draw to the screen just like an Etch-a-sketch.
 * 1 x [power](http://littlebits.cc/bits/littlebits-power)
 * 1 x [fork](http://littlebits.cc/bits/fork)
 * 2 x [dimmers](http://littlebits.cc/bits/dimmer)
+* 1 x [button](http://littlebits.cc/bits/button)
 
 ![image](../images/arduino.jpg)
 ![image](../images/power.jpg)
 ![image](../images/fork.jpg)
 ![image](../images/dimmer.jpg)
+![image](../images/button.jpg)
 
 ### Assembling the circuit
 
-Connect power bit to fork bit, fork to dimmers, one dimmer to a0 on Arduino, the other dimmer to a1 on Arduino.
+Connect power bit to fork bit, fork to dimmers and button, button to d0, one dimmer to a0 on Arduino, the other dimmer to a1 on Arduino.
 
 ![image](../images/draw.jpg)
 
@@ -30,7 +32,7 @@ var five = require("johnny-five"),
   io = require('socket.io'),
   io = require('socket.io'),
   fs = require('fs'),
-  board, joystick,
+  board, joystick, button,
   html, server;
 
 board = new five.Board();
@@ -42,6 +44,8 @@ board.on("ready", function() {
     pins: ["A1", "A0"],
     freq: 100
   });
+
+  button = new five.Button(0);
 
   // load our draw.html page from file
   html = fs.readFileSync('draw.html').toString();
@@ -60,7 +64,11 @@ board.on("ready", function() {
       socket.emit('drawing', this.fixed);
     });
 
+    button.on("press", function(value){
+      socket.emit('clear');
+    });
   });
+  
   // run web server on http://localhost:3000
   server.listen(3000);
 });
@@ -77,9 +85,17 @@ var socket = io('http://localhost:3000'),
 
 context.strokeStyle='blue';
 
-$('#clear').click(function(){
+function clear() {
   context.clearRect(0,0,600,400);
   context.beginPath();
+}
+
+$('#clear').click(function(){
+  clear();
+});
+
+socket.on('clear', function(){
+  clear();
 });
 
 socket.on('drawing', function (data) {
@@ -109,13 +125,13 @@ Then visit http://localhost:3000 in a standards-compliant web browser (e.g. Goog
 
 ### What you'll see
 
-When you move the dimmers, you'll leave a line on the screen like an Etch-a-Sketch. The clear button resets the drawing.
+When you move the dimmers, you'll leave a line on the screen like an Etch-a-Sketch. Pressing the button resets the drawing.
 
-The joystick object tracks our X and Y values from the two dimmers. We could have used the Sensor class like we did in [Brightness](../brightness/instructions.md), to read values from both dimmers, however the Joystick `axismove` event will regularly update us with the value of both X and Y together, which is convenient for this application.
+The joystick object tracks our X and Y values from the two dimmers. We could have used the Sensor class like we did in [Brightness](../brightness/instructions.md), to read values from both dimmers, however the Joystick `axismove` event will regularly update us with the value of both X and Y together, which is convenient for this application. 
 
-We're using socket.io to communicate between our server and client. Whenever we get a new reading from the joystick object, we send it to the client using `socket.emit()`.
+We're using socket.io to communicate between our server and client. Whenever we get a new reading from the joystick object, we send it to the client using `socket.emit()`. Whenever the button is pressed, we emit a _'clear'_ message.
 
-The client listens for the _'drawing'_ message from the server, and if the X and Y values have changed since the last message, it uses the HTML5 canvas to draw a line matching the values from the dimmers.
+The client listens for the _'drawing'_ message from the server, and if the X and Y values have changed since the last message, it uses the HTML5 canvas to draw a line matching the values from the dimmers. It also listens for _'clear'_ and clears the canvas in response.
 
 ### What to try
 
